@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using AutoMig;
 using NUnit.Framework;
-using ShopData.Models;
 
 namespace ShopTests.ModelsTest
 {
