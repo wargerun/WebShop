@@ -1,0 +1,310 @@
+﻿html,
+body {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    color: #5aacf8;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+/* Зона аккаунта/регистрации/входа */
+.top-line {
+    background: #363636;
+}
+
+.top-sing-list {
+    float: right;
+    padding: 5px 0;
+}
+
+.top-sing-link {
+    margin-left: 20px;
+    color: #ededed;
+    text-decoration: none;
+    border-bottom: 1px dashed transparent;
+}
+
+/* header */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top-navbar {
+    text-transform: uppercase;
+}
+
+.header-top-navbar-link {
+    text-decoration: none;
+    color: #000;
+    margin-left: 50px;
+}
+
+.header-top-logo {
+}
+
+
+.header-meta-bottom {
+    background: url(../Img/header-frame.png) no-repeat center center;
+}
+
+.header-meta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+    padding: 20px 0;
+}
+
+.form-search {
+    display: flex;
+    flex: auto;
+    margin-right: 100px;
+}
+
+.form-search > input {
+    opacity: 0.7;
+    text-align: center;
+    width: 100%;
+}
+
+/* buttons */
+.btn {
+    outline: 0;
+    padding: 8px 14px;
+    border: 2px solid #00b7ea;
+    font: 13px Stem,Arial,sans-serif;
+    line-height: 1.2;
+    text-align: center;
+    transition: 0.5s;
+    display: inline-block;
+    color: #00b7ea;
+}
+
+.btn, a:hover {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #00b7ea;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* main */
+main {
+    flex: 1 0 auto;
+    background-color: #eeeeee;
+    padding-bottom: 20px;
+}
+
+/* News */
+.news {
+    overflow: hidden;
+}
+
+.title-news {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.title-news::after {
+    content: '';
+    display: block;
+    margin: 27px auto 0;
+    height: 1px;
+    width: 100px;
+    background-color: #d7d7d7;
+}
+
+.flex-wrap-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-news-row-item {
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.flex-news-row-item-pic {
+    height: 250px;
+}
+
+.flex-news-row-item-pic img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 100%;
+}
+
+.flex-news-row-item-characteristic {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-item-title {
+    text-transform: uppercase;
+}
+
+/* Categories */
+
+.flex-wrap-categories {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.link-category-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* pos */
+    background-color: #d6d6d6;
+    /*flex: 0 0 20%;*/
+    width: 250px;
+    margin: 0 25px 25px 0;
+    position: relative;
+    height: 100px;
+    /* a */
+    color: #212529;
+    text-decoration: none;
+    /* border */
+    border-top: solid 2px #00b7ea;
+}
+
+.link-category-item h2 {
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.category-image {
+    border-radius: 50px;
+    margin-right: 25px;
+    height: 50px;
+}
+
+/* Contacts */
+
+.contacts {
+    background-color: #d6d6d6;
+    display: flex;
+    flex-direction: row;
+    /* position */
+    margin: 30px 0;
+}
+
+.contacts-block {
+    margin: 25px;
+}
+
+.contact-address {
+}
+
+.contact-address span {
+    font-style: normal;
+}
+
+.contact-phone a {
+}
+
+.contact-email {
+}
+
+.yndex-map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    width: 100%;
+}
+
+.feedback {
+    background-color: #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.feedback-message-row {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+
+.feedback-title {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.feedback-input {
+    width: 100%;
+}
+
+.mark-requred {
+    color: #ff0000;
+    margin-right:5px;
+}
+
+.feedback-error {
+    color: #ff0000;
+}
+
+.input-text {
+    border: solid 1px #00b7ea;
+    padding: 5px;
+    width: 100%;
+}
+
+/*  // Contacts // */
+/* подвал */
+footer {
+    flex-shrink: 0;
+    background-color: #4a4848;
+    padding: 20px 0;
+}
+
+@media (max-width: 610px) {
+    .header-top-logom, .flex-news-row-item-pic {
+        display: none;
+    }
+}

@@ -1,0 +1,25 @@
+﻿@model System.Collections.Generic.IEnumerable<Autopart>
+
+
+<h2>Авто запчасти</h2>
+
+<div class="autoparts">
+    @{
+        foreach (Autopart sparePart in Model)
+        {
+            <div class="autopart">
+                <h2>Название: @sparePart.Name</h2>
+                <p>Model: @sparePart.Model</p>
+                <p>Brand: @sparePart.Brand</p>
+                <p>Country: @sparePart.Country</p>
+                @{
+                    byte[] bytesFromImage = ImageHelper.GetBytesFromImage(sparePart.Photo);
+                    string base64String = Convert.ToBase64String(bytesFromImage);
+                }
+                <p>PHOTO: <img src="@String.Format("data:image/png;base64,{0}", base64String)" title="Photo" /></p>
+                <p>Available: @sparePart.Available</p>
+                <p>Price: @sparePart.Price</p>
+            </div>
+        }
+    }
+</div>
